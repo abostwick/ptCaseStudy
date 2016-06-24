@@ -19,6 +19,9 @@ header {
     text-align: center;
     padding-top: 15px;
     height: 60px;
+    background-image: url(images/sunset.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 nav {
