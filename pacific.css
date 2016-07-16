@@ -177,8 +177,15 @@ h3 {
         border-bottom: 2px solid #330000;
     }
     nav a {
+        transition: color 3s ease-out;
         display: block;
     }
+    
+    video, embed {
+        float: right;
+        padding-left: 20px;
+    }
+    
     #homehero {
         background-image: none;
         height: 0;
@@ -248,7 +255,8 @@ main ul {
 }
 
 footer {
-    margin-left: 190px;
+    clear: both;
+    margin-left: 0px;
     background-color: #ffffff;
     font-size: 75%;
     font-style: italic;
@@ -256,3 +264,87 @@ footer {
     font-family: Georgia, "Times New Roman", serif;
     padding: 20px;
 }
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 0;
+}
+
+input {
+    margin-bottom: 20px;
+    display: block;
+}
+
+textarea {
+    margin-bottom: 20px;
+    display: block;
+}
+
+input[type="submit"] {
+    margin-left: 130px;
+}
+
+figure {
+    text-align: center;
+}
+
+#gallery {
+    float: left;
+    width: 360px;
+    position: relative;
+    height: 200px;
+}
+
+#gallery ul {
+    list-style-type: none;
+}
+
+#gallery li {
+    width: 100px;
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    float: left;
+    text-decoration: none;
+    color: #333;
+    font-style: italic;
+}
+
+#gallery span {
+    display: none;
+}
+
+#gallery a:hover span {
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 320px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+    label {
+        float: none;
+        text-align: left;
+    }
+    
+    input[type="submit"] {
+    margin-left: 0px;
+    }
+    
+    #gallery {
+        display: none;
+    }
+}
+
+
